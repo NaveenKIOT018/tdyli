@@ -115,13 +115,36 @@ li{
     gap: 10px;
     overflow-x: scroll;
     white-space: nowrap;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: cursive;
     border: none;
     outline: none;
 }
 
 li::-webkit-scrollbar{
     display: none;
+}
+
+@media (max-width:720px) {
+    li{
+        height: 50px;
+        max-width: 400px;
+        text-align: center;
+        border-radius: 10px;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        margin: 10px;
+        gap: 10px;
+        overflow-x: scroll;
+        white-space: nowrap;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        border: none;
+        outline: none;
+    }
+    
+    li::-webkit-scrollbar{
+        display: none;
+    }
 }
 
 .deletebtn{
