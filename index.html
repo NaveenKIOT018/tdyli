@@ -10,7 +10,7 @@
 <body>
     <div class="todolist" >
         <h1 class="h">To do List</h1>
-        <div class="row"><input id="con"  type="text" placeholder="Update your list"> <button class="add" id="button">Add item</button></div>
+        <div class="row"><input id="con"  type="text" placeholder="Update your list"> <button class="add" id="button">Add</button></div>
         <div class="container" id="listelement">
             
         </div>
@@ -46,9 +46,8 @@
                 done.addEventListener("click",()=>{
                     liste.classList.toggle("strike")
                 })
-
-                liste.append(done)
                 liste.append(para)
+                liste.append(done)
                 liste.append(deletebtn)
                 listelement.append(liste)
                 con.value=''
