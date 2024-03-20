@@ -116,6 +116,7 @@ li{
     overflow-x: scroll;
     white-space: nowrap;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:bold;
     border: none;
     outline: none;
 }
