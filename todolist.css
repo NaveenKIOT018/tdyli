@@ -16,7 +16,12 @@ body{
     height: 560px;
     width: 450px;
     text-align: center;
-    background-color: black;
+    background: rgba(0, 0, 0, 0.60);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.9px);
+    -webkit-backdrop-filter: blur(14.9px);
+    border: 1px solid rgba(144, 250, 251, 0.57);
     padding: 18px;
     border-radius: 10px;
 }
@@ -47,14 +52,14 @@ body{
     position: relative;
     width: 100%;
     margin-bottom: 20px;
+    gap: 10px;
 }
 
 
 input{
-    flex: 1;
     height: 50px;
-    width: 100%;
-    border-radius: 20px 50px 50px 20px;
+    width: 75%;
+    border-radius: 10px;
     padding: 10px;
     font-size: larger;
     margin-bottom: 20px;
@@ -66,10 +71,10 @@ input{
     position: absolute;
     right: 0;
     height: 50px;
-    max-width: 30%;
-    border-radius: 50px;
+    width: 23%;
+    border-radius: 10px;
     padding: 10px;
-    font-size: large;
+    font-size: medium;
     background-color:  rgb(255, 229, 113);
 }
 
@@ -99,7 +104,7 @@ input{
 
 
 li{
-    height: 40px;
+    height: 50px;
     max-width: 400px;
     text-align: center;
     border-radius: 10px;
@@ -110,7 +115,7 @@ li{
     gap: 10px;
     overflow-x: scroll;
     white-space: nowrap;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: cursive;
     border: none;
     outline: none;
 }
@@ -141,14 +146,13 @@ li::-webkit-scrollbar{
     background-color: transparent;
     cursor: pointer;
     border: 1px solid  #eb1000;
+    box-shadow: 0 0 10px  #eb1000,0 0 20px  #eb1000;
 }
 
 .con{
-    width: 70%;
-    overflow-x: scroll;
-    white-space: nowrap;
-    font-size: 20px;
-    display: inline;
+    width: 100%;
+    overflow: scroll;
+    font-size: 15px;
     height: 100%;
     background-color:  rgb(252, 239, 182);
     display: flex;
@@ -156,6 +160,10 @@ li::-webkit-scrollbar{
     align-items: center;
     align-content: center;
     border-radius: 10px;
+    cursor: pointer;
+    padding-left :10%;
+    padding-right :10%;
+    
 }
 
 .con::-webkit-scrollbar{
@@ -183,6 +191,7 @@ li::-webkit-scrollbar{
     background-color: transparent;
     cursor: pointer;
     border: 1px solid  #63E6BE;
+    box-shadow: 0 0 10px #63E6BE,0 0 20px #63E6BE;
 }
 
 .strike{
